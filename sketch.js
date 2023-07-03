@@ -35,18 +35,16 @@ let rev1recAnim0Xpos = 468; let rev1recAnim1Ypos = 138; let rev1recAnim2Xpos = 4
 let rev1recAnim4Xpos = 468; let rev1recAnim5Ypos = 138; let rev1recAnim6Xpos = 468; let rev1recAnim7Ypos = 138;
 let rev1recAnim8Xpos = 468; let rev1recAnim9Ypos = 138; let rev1recAnim10Ypos = 138; let rev1recAnim11Ypos = 138;
 let rev1recAnim12Xpos = 468; let rev1recAnim13Ypos = 138; let rev1recAnim14Xpos = 468; let rev1recAnim15Xpos = 468; 
-let rev1recAnim16Ypos = 138; let rev1recAnim17Xpos = 468; let rev1recAnim18Ypos = 138; let rev1recAnim19Xpos = 468;
 //Valores X e Y para los recortes de la animacion de la portada 2
 let rev2recAnim0Xpos = 468; let rev2recAnim1Ypos = 138; let rev2recAnim2Xpos = 468; let rev2recAnim3Ypos = 138;
 let rev2recAnim4Xpos = 468; let rev2recAnim5Ypos = 138; let rev2recAnim6Xpos = 468; let rev2recAnim7Ypos = 138;
 let rev2recAnim8Xpos = 468; let rev2recAnim9Ypos = 138; let rev2recAnim10Ypos = 138; let rev2recAnim11Ypos = 138;
-let rev2recAnim12Xpos = 468; let rev2recAnim13Ypos = 138; let rev2recAnim14Xpos = 468;
+let rev2recAnim12Xpos = 468; let rev2recAnim13Ypos = 138; let rev2recAnim14Xpos = 468; let rev2recAnim15Xpos = 468; 
 //Valores X e Y para los recortes de la animacion de la portada 3
 let rev3recAnim0Xpos = 468; let rev3recAnim1Ypos = 138; let rev3recAnim2Xpos = 468; let rev3recAnim3Ypos = 138;
 let rev3recAnim4Xpos = 468; let rev3recAnim5Ypos = 138; let rev3recAnim6Xpos = 468; let rev3recAnim7Ypos = 138;
 let rev3recAnim8Xpos = 468; let rev3recAnim9Ypos = 138; let rev3recAnim10Ypos = 138; let rev3recAnim11Ypos = 138;
-let rev3recAnim12Xpos = 468; let rev3recAnim13Ypos = 138; let rev3recAnim14Xpos = 468; let rev3recAnim15Xpos = 468;
-let rev3recAnim16Ypos = 138; let rev3recAnim17Xpos = 468; let rev3recAnim18Ypos = 138; let rev3recAnim19Xpos = 468;
+let rev3recAnim12Xpos = 468; let rev3recAnim13Ypos = 138; let rev3recAnim14Xpos = 468; let rev3recAnim15Xpos = 468; 
 //Variables boolean para detectar el hover en cada revista
 let revista1Hover, revista2Hover, revista3Hover;
 //Variables boolean para animacion de elegir revista
@@ -62,15 +60,15 @@ function preload() {
   marco = loadImage("imagenes/marco.png");
   tapaReloj = loadImage("imagenes/tapaReloj.png");
   //Carga de recortes para animacion revista 1
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 16; i++) {
     rev1recAnim[i] = loadImage("imagenes/recortesAnim/revista1/rev1recAnim" + i + ".png");
   }
   //Carga de recortes para animacion revista 2
-  for (let i = 0; i < 15; i++) {
+  for (let i = 0; i < 16; i++) {
     rev2recAnim[i] = loadImage("imagenes/recortesAnim/revista2/rev2recAnim" + i + ".png");
   }
   //Carga de recortes para animacion revista 3
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 16; i++) {
     rev3recAnim[i] = loadImage("imagenes/recortesAnim/revista3/rev3recAnim" + i + ".png");
   }
   //Carga de recortes revista 1
@@ -101,19 +99,17 @@ function reiniciar() {
   rev1recAnim0Xpos = 468; rev1recAnim1Ypos = 138; rev1recAnim2Xpos = 468; rev1recAnim3Ypos = 138;
   rev1recAnim4Xpos = 468; rev1recAnim5Ypos = 138; rev1recAnim6Xpos = 468; rev1recAnim7Ypos = 138;
   rev1recAnim8Xpos = 468; rev1recAnim9Ypos = 138; rev1recAnim10Ypos = 138; rev1recAnim11Ypos = 138;
-  rev1recAnim12Xpos = 468; rev1recAnim13Ypos = 138; rev1recAnim14Xpos = 468; rev1recAnim15Xpos = 468; 
-  rev1recAnim16Ypos = 138; rev1recAnim17Xpos = 468; rev1recAnim18Ypos = 138; rev1recAnim19Xpos = 468;
+  rev1recAnim12Xpos = 468; rev1recAnim13Ypos = 138; rev1recAnim14Xpos = 468; rev1recAnim15Xpos = 468;
   //Restaurar valores X e Y para los recortes de la animacion de la portada 2
   rev2recAnim0Xpos = 468; rev2recAnim1Ypos = 138; rev2recAnim2Xpos = 468; rev2recAnim3Ypos = 138;
   rev2recAnim4Xpos = 468; rev2recAnim5Ypos = 138; rev2recAnim6Xpos = 468; rev2recAnim7Ypos = 138;
   rev2recAnim8Xpos = 468; rev2recAnim9Ypos = 138; rev2recAnim10Ypos = 138; rev2recAnim11Ypos = 138;
-  rev2recAnim12Xpos = 468; rev2recAnim13Ypos = 138; rev2recAnim14Xpos = 468;
+  rev2recAnim12Xpos = 468; rev2recAnim13Ypos = 138; rev2recAnim14Xpos = 468; rev2recAnim15Xpos = 468;
   //Restaurar valores X e Y para los recortes de la animacion de la portada 3
   rev3recAnim0Xpos = 468; rev3recAnim1Ypos = 138; rev3recAnim2Xpos = 468; rev3recAnim3Ypos = 138;
   rev3recAnim4Xpos = 468; rev3recAnim5Ypos = 138; rev3recAnim6Xpos = 468; rev3recAnim7Ypos = 138;
   rev3recAnim8Xpos = 468; rev3recAnim9Ypos = 138; rev3recAnim10Ypos = 138; rev3recAnim11Ypos = 138;
   rev3recAnim12Xpos = 468; rev3recAnim13Ypos = 138; rev3recAnim14Xpos = 468; rev3recAnim15Xpos = 468;
-  rev3recAnim16Ypos = 138; rev3recAnim17Xpos = 468; rev3recAnim18Ypos = 138; rev3recAnim19Xpos = 468;
   //Reset de booleans para elegir revista
   elegirRevista1 = false; elegirRevista2 = false; elegirRevista3 = false;
   //Cambio a escena principal
@@ -276,15 +272,11 @@ function draw() {
       image(rev1recAnim[13], 468, rev1recAnim13Ypos, 342, 444);
       image(rev1recAnim[14], rev1recAnim14Xpos, 138, 342, 444);
       image(rev1recAnim[15], rev1recAnim15Xpos, 138, 342, 444);
-      image(rev1recAnim[16], 468, rev1recAnim16Ypos, 342, 444);
-      image(rev1recAnim[17], rev1recAnim17Xpos, 138, 342, 444);
-      image(rev1recAnim[18], 468, rev1recAnim18Ypos, 342, 444);
-      image(rev1recAnim[19], rev1recAnim19Xpos, 138, 342, 444);
       //Movimiento de los recortes
       rev1recAnim0Xpos ++; rev1recAnim1Ypos --; rev1recAnim2Xpos --; rev1recAnim3Ypos ++; rev1recAnim4Xpos ++;
       rev1recAnim5Ypos --; rev1recAnim6Xpos --; rev1recAnim7Ypos ++; rev1recAnim8Xpos ++; rev1recAnim9Ypos ++;
       rev1recAnim10Ypos ++; rev1recAnim11Ypos --; rev1recAnim12Xpos ++; rev1recAnim13Ypos --; rev1recAnim14Xpos --;
-      rev1recAnim15Xpos --; rev1recAnim16Ypos --; rev1recAnim17Xpos ++; rev1recAnim18Ypos ++; rev1recAnim19Xpos --;
+      rev1recAnim15Xpos --;
       //Timer
       if (frameCount % 60 == 0 && timerAnimacion > 0) {
         timerAnimacion --;
@@ -294,7 +286,6 @@ function draw() {
         rev1recAnim4Xpos = 2000; rev1recAnim5Ypos = 2000; rev1recAnim6Xpos = 2000; rev1recAnim7Ypos = 2000;
         rev1recAnim8Xpos = 2000; rev1recAnim9Ypos = 2000; rev1recAnim10Ypos = 2000; rev1recAnim11Ypos = 2000;
         rev1recAnim12Xpos = 2000; rev1recAnim13Ypos = 2000; rev1recAnim14Xpos = 2000; rev1recAnim15Xpos = 2000;
-        rev1recAnim16Ypos = 2000; rev1recAnim17Xpos = 2000; rev1recAnim18Ypos = 2000; rev1recAnim19Xpos = 2000;
       }
       if (timerAnimacion == 0) {
         escena = 4;
@@ -320,10 +311,12 @@ function draw() {
       image(rev2recAnim[12], rev2recAnim12Xpos, 138, 342, 444);
       image(rev2recAnim[13], 468, rev2recAnim13Ypos, 342, 444);
       image(rev2recAnim[14], rev2recAnim14Xpos, 138, 342, 444);
+      image(rev2recAnim[15], rev2recAnim15Xpos, 138, 342, 444);
       //Movimiento de los recortes
       rev2recAnim0Xpos ++; rev2recAnim1Ypos --; rev2recAnim2Xpos --; rev2recAnim3Ypos ++; rev2recAnim4Xpos ++;
       rev2recAnim5Ypos --; rev2recAnim6Xpos --; rev2recAnim7Ypos ++; rev2recAnim8Xpos ++; rev2recAnim9Ypos ++;
       rev2recAnim10Ypos ++; rev2recAnim11Ypos --; rev2recAnim12Xpos ++; rev2recAnim13Ypos --; rev2recAnim14Xpos --;
+      rev2recAnim15Xpos --;
       //Timer
       if (frameCount % 60 == 0 && timerAnimacion > 0) {
         timerAnimacion --;
@@ -332,7 +325,7 @@ function draw() {
         rev2recAnim0Xpos = 2000; rev2recAnim1Ypos = 2000; rev2recAnim2Xpos= 2000; rev2recAnim3Ypos = 2000;
         rev2recAnim4Xpos = 2000; rev2recAnim5Ypos = 2000; rev2recAnim6Xpos = 2000; rev2recAnim7Ypos = 2000;
         rev2recAnim8Xpos = 2000; rev2recAnim9Ypos = 2000; rev2recAnim10Ypos = 2000; rev2recAnim11Ypos = 2000;
-        rev2recAnim12Xpos = 2000; rev2recAnim13Ypos = 2000; rev2recAnim14Xpos = 2000;
+        rev2recAnim12Xpos = 2000; rev2recAnim13Ypos = 2000; rev2recAnim14Xpos = 2000; rev2recAnim15Xpos = 2000;
       }
       if (timerAnimacion == 0) {
         escena = 5;
@@ -358,14 +351,10 @@ function draw() {
       image(rev3recAnim[13], 468, rev3recAnim13Ypos, 342, 444);
       image(rev3recAnim[14], rev3recAnim14Xpos, 138, 342, 444);
       image(rev3recAnim[15], rev3recAnim15Xpos, 138, 342, 444);
-      image(rev3recAnim[16], 468, rev3recAnim16Ypos, 342, 444);
-      image(rev3recAnim[17], rev3recAnim17Xpos, 138, 342, 444);
-      image(rev3recAnim[18], 468, rev3recAnim18Ypos, 342, 444);
-      image(rev3recAnim[19], rev3recAnim19Xpos, 138, 342, 444);
       rev3recAnim0Xpos ++; rev3recAnim1Ypos --; rev3recAnim2Xpos --; rev3recAnim3Ypos ++; rev3recAnim4Xpos ++;
       rev3recAnim5Ypos --; rev3recAnim6Xpos --; rev3recAnim7Ypos ++; rev3recAnim8Xpos ++; rev3recAnim9Ypos ++;
       rev3recAnim10Ypos ++; rev3recAnim11Ypos --; rev3recAnim12Xpos ++; rev3recAnim13Ypos --; rev3recAnim14Xpos --;
-      rev3recAnim15Xpos --; rev3recAnim16Ypos --; rev3recAnim17Xpos ++; rev3recAnim18Ypos ++; rev3recAnim19Xpos --;
+      rev3recAnim15Xpos --;
       if (frameCount % 60 == 0 && timerAnimacion > 0) {
         timerAnimacion --;
       }
@@ -374,7 +363,6 @@ function draw() {
         rev3recAnim4Xpos = 2000; rev3recAnim5Ypos = 2000; rev3recAnim6Xpos = 2000; rev3recAnim7Ypos = 2000;
         rev3recAnim8Xpos = 2000; rev3recAnim9Ypos = 2000; rev3recAnim10Ypos = 2000; rev3recAnim11Ypos = 2000;
         rev3recAnim12Xpos = 2000; rev3recAnim13Ypos = 2000; rev3recAnim14Xpos = 2000; rev3recAnim15Xpos = 2000;
-        rev3recAnim16Ypos = 2000; rev3recAnim17Xpos = 2000; rev3recAnim18Ypos = 2000; rev3recAnim19Xpos = 2000;
       }
       if (timerAnimacion == 0) {
         escena = 6;
